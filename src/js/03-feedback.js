@@ -23,9 +23,9 @@ function getLocalData() {
 
 getLocalData();
 feedbackForm.addEventListener('submit', submitData);
-
 function submitData(e) {
   e.preventDefault();
   this.reset();
   console.log(localStorage.getItem('feedback-form-state'));
   localStorage.removeItem('feedback-form-state');
+}
